@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+
+    <main>
+
+      <section>
+        <h3 class="center">Calcola il prezzo del tuo Biglietto</h3>
+
+        <div class="box1">
+          <div class="padding-fix">
+            <div class="box-flex">
+
+              <div class="center">
+                <label for="name">Nome e Cognome</label>
+                <div>
+                  <input class="border-radius" id="name" type="text" name="name" value="">
+                </div>
+              </div>
+
+              <div class="center">
+                <label for="distance">Km da percorrere</label>
+                <div>
+                  <input class="border-radius" id="distance" type="number" name="distance">
+                </div>
+              </div>
+
+              <div class="center">
+                <label for="era">Fascia d'età</label>
+                <div>
+                  <select class="border-radius" id="eta" name="eta">
+                    <option selected value="">seleziona un'opzione</option>
+                    <option value="1">minorenne</option>
+                    <option value="0">maggiorenne</option>
+                    <option value="3">over 65</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="actions center">
+            <input class="border-radius" id="genera" type="button" value="Genera">
+            <input class="border-radius" id="annulla" type="button" value="Annulla">
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section>
+        <h3 class="center1">Il tuo Biglietto</h3>
+
+        <div class="box2">
+          <div class="margin-center">
+            <h3>Dettaglio Passeggeri</h3>
+            <div class="border">
+                <div class="padding-fix">
+                  <div class="box-flex">
+
+                    <div class="down-flex">
+                      <h4>Nome Passeggero</h4>
+                    </div>
+
+                    <div class="down-flex">
+                      <h4>Offerta</h4>
+                    </div>
+
+                    <div class="down-flex">
+                      <h4>Carrozza</h4>
+                    </div>
+
+                    <div class="down-flex">
+                      <h4>Codice CP</h4>
+                    </div>
+
+                    <div class="down-flex">
+                      <h4>Costo biglietto</h4>
+                    </div>
+
+                  </div>
+
+                  <div class="box-flex margin-fix">
+
+                    <div class="down-flex">
+                      <h4 id="nome-passeggero"></h4>
+                    </div>
+
+                    <div class="down-flex">
+                      <p id="eta-sconto"></p>
+                    </div>
+
+                    <div class="down-flex">
+                      <p id="carrozza-num"></p>
+                    </div>
+
+                    <div class="down-flex">
+                      <p id="codice-cp"></p>
+                    </div>
+
+                    <div class="down-flex">
+                      <p id="costo-totale"></p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
